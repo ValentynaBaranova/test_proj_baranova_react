@@ -1,5 +1,6 @@
 Тестове технічне завдання
 розробник: Валентина Баранова
+Час потрачений на виконання: 20 год.
 
 Вимоги: Створити веб-додаток згідно ТЗ https://docs.google.com/document/d/1RKFIarEpVWFXSfxrhF_VWOYjQVpprqEQjj8sKU9nbB0/edit 
 
