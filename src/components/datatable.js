@@ -19,16 +19,15 @@ const MainContainer = styled.div`
   margin: 0 auto;
   background-color: #000;
   border-radius: 10px;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   box-shadow: 22px 19px 21px rgb(16 18 18 / 52%);
   margin-top: 20px;
 `;
 
 const Button = styled.button`
   font-size: 18px;
-  margin: 1em;
-  padding: 10px;
-  border-radius: 3px;
+  margin: 10px 10px 20px 10px;
+  padding: 5px 10px;
   background-color: #8c1170;
   border: 1px solid #5c0549;
   color: #fff;
@@ -53,10 +52,9 @@ const tableStyles = {
       justifyContent: "center",
       backgroundColor: "#3d3c3c",
       color: "white",
-      fontSize: "18px",
+      fontSize: "16px",
       fontWeight: "500",
       textTransform: "uppercase",
-      padding: "5px",
     },
   },
   cells: {
@@ -79,10 +77,6 @@ export default function Fdatatable({ visibleFields }) {
   const limit = useSelector((state) => state.limit);
   const IsError = useSelector((state) => state.isError);
   const dispatcher = useDispatch();
-
-  const onClick = () => {
-    dispatcher(activateSettings(!isFieldSettingActive));
-  };
 
   useEffect(() => {
     dispatcher(getdata(currentPage, limit));
@@ -113,7 +107,18 @@ export default function Fdatatable({ visibleFields }) {
             <h1>An error occurred while retrieving data</h1>
           </Error>
         )}
-        <Button onClick={onClick}>Select Columns</Button>
+        <Button
+          onClick={() => dispatcher(activateSettings(!isFieldSettingActive))}
+        >
+          Select Columns
+        </Button>
+        <Button
+          onClick={(e) => {
+            document.location.reload();
+          }}
+        >
+          Reset Columns
+        </Button>
         <DataTable
           paginationServer
           paginationTotalRows={MAX_ROWS_COUNT}

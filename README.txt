@@ -1,50 +1,48 @@
-Тестове технічне завдання
-розробник: Валентина Баранова
-Час потрачений на виконання: 20 год.
+Test task
+developer: Valentyna Baranova
+Time spent on execution: 20 hours.
 
-Вимоги: Створити веб-додаток згідно ТЗ https://docs.google.com/document/d/1RKFIarEpVWFXSfxrhF_VWOYjQVpprqEQjj8sKU9nbB0/edit 
-
-Додаток має використовувати Redux
-для встановлення бібліотеки в залежності від пакетного менеджера використовуємо:
+The application must use Redux
+to install the library, depending on the package manager, use:
 $ yarn add redux react-redux redux-thunk redux-devtools-extension
 $ npm install redux react-redux redux-thunk redux-devtools-extension
 
-Данні для відображення беруться з сервісу JSONPlaceholder. Для отримання даних використовується бібліотека axios. https://www.npmjs.com/package/axios
-для встановлення бібліотеки в залежності від пакетного менеджера використовуємо:
+Data for display is taken from the JSONPlaceholder service. The axios library is used to obtain data. https://www.npmjs.com/package/axios
+to install the library, depending on the package manager, use:
 $ yarn add axios
 $ npm install axios
 
-Для відображення даних в табличному вигляді використовується бібліотека react-data-table-component яка потребує бібліотеку styled-components
-для встановлення бібліотеки в залежності від пакетного менеджера використовуємо:
+To display data in tabular form, the react-data-table-component library is used, which requires the styled-components library
+to install the library, depending on the package manager, use:
 $ yarn add styled-components react-data-table-component
 $ npm install styled-components react-data-table-component
 
-Для відображення діалогу з настройки полів табліці використовується компонент react-modal
-для встановлення бібліотеки в залежності від пакетного менеджера використовуємо:
+The react-modal component is used to display the table field settings dialog
+to install the library, depending on the package manager, use:
 $ yarn add react-modal
 $ npm install react-modal
 
-Для відображення іконок
+To display icons
 $ yarn add react-icons
 $ npm install react-icons
 
 
-Для настройки полів таблиці використовується перетаскування
+Drag and drop is used to adjust the table fields
 
-Як працює:
-Додаток бере дані юзерів з сервісу JSONPlaceholder і відображає їх у вигляді таблиці. (нажаль сервіс дає можливість отримати лише 10 записів юзерів, тому пагінацію зробити неможливо але функціонально пагінація передбачена).
-Для визначення полів таблиці, що будуть відображатися, є вікно для налаштувань. Де за допомогою перетаскування можна задати поля, що будуть відображатися. Передбачений пошук полів. Визначені поля що відображаються за замовчуванням, але перелік полів можна змінити. 
-Слід зазначити, що логіка передбачає, що хоча б одне поле має бути в таблиці.
+How it works:
+The application takes user data from the JSONPlaceholder service and displays them in the form of a table. (unfortunately, the service allows you to receive only 10 user records, so pagination is impossible, but pagination is functionally provided).
+To define the fields of the table to be displayed, there is a window for settings. Where you can drag and drop to set the fields that will be displayed. Predictive field search. Defined fields are displayed by default, but the list of fields can be changed.
+It should be noted that the logic assumes that at least one field should be in the table.
 
-Для встановлення і роботи з додатком треба скопіювати його на диск, видкрити средою розробки наприклад VS Code, та в консолі виконати команду в залежності від пакетного менеджера:
+To install and work with the application, you need to copy it to a disk, open it with a development environment such as VS Code, and execute the command in the console depending on the package manager:
 npm install
 yarn add
 
-Для запуску проекту в консолі виконати команду в залежності від пакетного менеджера:
+To start the project in the console, execute the command depending on the package manager:
 npm start
 yarn start
 
-Для отримання версії для деплоя в консолі виконати команду в залежності від пакетного менеджера:
+To get the version for deployment in the console, execute the command depending on the package manager:
 npm build
 yarn build
-Отриману папку build залити на сервер.
+Upload the received build folder to the server.

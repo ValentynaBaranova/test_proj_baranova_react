@@ -7,8 +7,7 @@ import styled from "styled-components";
 
 const Button = styled.button`
   font-size: 18px;
-  margin: 1em;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 3px;
   background-color: #8c1170;
   border: 1px solid #5c0549;
@@ -25,7 +24,7 @@ const customStyles = {
     width: "40%",
     minWidth: "340px",
     inset: "0",
-    padding: "20px",
+    padding: "20px 20px 10px 20px",
     backgroundColor: "#1a1a1a",
     borderRadius: "10px",
     margin: "20px auto",
@@ -33,6 +32,7 @@ const customStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    overflow: "inherit",
   },
 };
 
