@@ -30,6 +30,10 @@ const List = styled.div`
   margin: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  a {
+    height: 14px;
+  }
 `;
 const DeleteLink = styled.a`
   background-color: #1a1a1a;
@@ -94,7 +98,7 @@ const FSettings = () => {
         >
           {itm}
           <DeleteLink onClick={(e) => OnDelButtonClick(e, itm)}>
-            <FaTimes />
+            <FaTimes size={14} />
           </DeleteLink>
         </List>
       ));
