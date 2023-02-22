@@ -49,7 +49,7 @@ export default function FfieldsSettingDlg() {
       >
         <FSettings />
         <Button onClick={() => dispatcher(activateSettings(false))}>
-          Applay
+          Apply
         </Button>
       </Modal>
     </div>
